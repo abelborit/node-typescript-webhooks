@@ -21,7 +21,7 @@ En esta sección trabajaremos con webhooks, con los cuales vamos a crear una apl
 
 ### \* PASOS A REALIZAR:
 
-1. ejemplo
+1. NOTA: algunas ideas de este proyecto fueron inspiradas de este video: https://www.youtube.com/watch?v=41NOoEz3Tzc
 2. ejemplo
 3. ejemplo
 
