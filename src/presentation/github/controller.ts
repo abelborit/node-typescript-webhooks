@@ -11,11 +11,12 @@ export class GitHubController {
 
     /* cuando se mire en los headers que alguno empieza con "x-" usualmente es un header personalizado/propio de la plataforma que estamos usando */
     const githubEvent = request.header("x-github-event") ?? "unknown";
-    console.log({ githubEvent });
+    // console.log({ githubEvent });
 
     /* NOTA: en algunos lugares o herramientas al usar sus propios webhooks, el body de la request no se verá como un objeto sino estará como un string */
     const payload = request.body;
-    console.log(payload);
+    // console.log(payload);
+    // console.log(JSON.stringify(payload)); // para crear el tipado
 
     response.status(201).send("Accepted");
   };
