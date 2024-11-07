@@ -7,6 +7,8 @@ const main = () => {
 
   const gitHubController = new GitHubController();
 
+  app.use(express.json());
+
   app.post("/api/github", gitHubController.webHookHandler);
 
   app.listen(envs.PORT, () => {
