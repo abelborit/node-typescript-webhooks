@@ -22,7 +22,13 @@ En esta sección trabajaremos con webhooks, con los cuales vamos a crear una apl
 ### \* PASOS A REALIZAR:
 
 1. NOTA: algunas ideas de este proyecto fueron inspiradas de este video: https://www.youtube.com/watch?v=41NOoEz3Tzc
-2. ejemplo
+
+2. Otras formas de enviar los eventos de GitHub directamente a Discord
+
+   - https://dev.to/jaeyson/simple-way-to-send-github-events-to-a-discord-channel-using-webhook-naj
+
+   - https://superuser.com/questions/1189901/can-i-integrate-a-discord-channel-with-github-pull-requests
+
 3. ejemplo
 
 ### \* RECURSOS A USAR:
