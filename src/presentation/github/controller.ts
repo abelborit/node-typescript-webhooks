@@ -1,8 +1,12 @@
 import { Request, Response } from "express";
 import { GitHubService } from "../services/github.service";
+import { DiscordService } from "../services/discord.service";
 
 export class GitHubController {
-  constructor(private readonly gitHubService = new GitHubService()) {}
+  constructor(
+    private readonly gitHubService = new GitHubService(),
+    private readonly discordService = new DiscordService()
+  ) {}
 
   public webHookHandler = (request: Request, response: Response) => {
     /* para probar esto se está haciendo con los PORTS nativos de Visual Studio Code porque se necesita exponer una url válida ya que con "localhost" no funcionaría en GitHub (también se puede usar ngrok). Se crea el puerto y se coloca como público, se prueba en postman si funciona y se configura los webhooks en settings del repositorio a colocar */
@@ -38,6 +42,12 @@ export class GitHubController {
     }
 
     console.log({ message });
-    response.status(201).send("Accepted");
+
+    this.discordService
+      .notify(message)
+      .then(() => response.status(202).send("Message sended to Discord"))
+      .catch(() =>
+        response.status(500).send({ error: "Internal Server Error" })
+      ); // se coloca como error 500 ya que es un error que no esperamos que suceda. Para entenderlo mejor, es un error que no esperamos que suceda porque en primer lugar no viene por alguna lógica de nosotros sino posíblemente por parte de las plataformas externas, y en segundo lugar, puede ser que sea un error de nosotros de tipeo o lógica
   };
 }
