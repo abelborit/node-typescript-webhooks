@@ -7,4 +7,7 @@ export const envs = {
 
   /* Discord */
   DISCORD_WEBHOOK_URL: get("DISCORD_WEBHOOK_URL").required().asString(),
+
+  /* Secret Key de Github */
+  SECRET_TOKEN: get("SECRET_TOKEN").required().asString(),
 };
