@@ -2,6 +2,8 @@
 
 ---
 
+## Parte I:
+
 # Temas puntuales de la sección
 
 ### ¿Qué veremos en esta sección?
@@ -65,6 +67,40 @@ En esta sección trabajaremos con webhooks, con los cuales vamos a crear una apl
 
 - NOTA: haremos un proyecto con GitHub y sus webhooks, entonces los webhooks ofrecen una manera de enviar las notificaciones a un servidor web externo siempre que se produzcan determinadas acciones en GitHub.
 
+- ejemplo
+
+---
+
+## Parte I:
+
+# Temas puntuales de la sección
+
+### ¿Qué veremos en esta sección?
+
+Esta sección es bastante corta, porque nos enfocaremos únicamente en la verificación de los headers de autenticación que nos ofrece Github para validar y autofirmar nuestro payload para verificar que lo que estamos recibiendo fue literalmente firmado por GitHub y no por un tercero con algún fin malicioso.
+
+- Puntualmente veremos:
+
+  - Headers de petición personalizados
+  - Middleware de autenticación
+  - Bloqueo de peticiones no válidas
+
+### \* PASOS A REALIZAR:
+
+1. ejemplo
+2. ejemplo
+3. ejemplo
+
+### \* RECURSOS A USAR:
+
+- Paquete `nombre_paquete` usando `comando_paquete` desde `url_paquete`
+- Paquete `nombre_paquete` usando `comando_paquete` desde `url_paquete`
+- Paquete `nombre_paquete` usando `comando_paquete` desde `url_paquete`
+
+### \* NOTAS:
+
+- ejemplo
+- ejemplo
 - ejemplo
 
 ---
