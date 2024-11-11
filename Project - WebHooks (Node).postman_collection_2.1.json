@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "1bbb2977-de06-4f37-88b2-b40b08460ce9",
+		"name": "Project - WebHooks (Node)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25203359"
+	},
+	"item": [
+		{
+			"name": "WebHook - GitHub",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-github-event",
+						"value": "game-test",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/github",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"github"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WebHook - GitHub (VS Code Port)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-github-event",
+						"value": "game-test",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "colocar_url_de_visual_studio_code_o_ngrok/api/github",
+					"host": [
+						"colocar_url_de_visual_studio_code_o_ngrok"
+					],
+					"path": [
+						"api",
+						"github"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
